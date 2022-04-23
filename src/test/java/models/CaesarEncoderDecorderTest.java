@@ -17,6 +17,12 @@ public class CaesarEncoderDecorderTest {
         Character expected = 'B';
         assertEquals(expected, caesarEncoderDecorder.cipherCharacter('Z'));
     }
+    @Test
+    public void cipherCharacter_returnsCharPlusTwoPositions_BOY(){
+        CaesarEncoderDecorder caesarEncoderDecorder = new CaesarEncoderDecorder();
+        String expected = "DQA";
+        assertEquals(expected, caesarEncoderDecorder.cipherText("BOY"));
+    }
 
 
 }
