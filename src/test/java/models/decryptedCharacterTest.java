@@ -12,19 +12,19 @@ public class decryptedCharacterTest {
         assertEquals(expected, decryptedCharacter.decryptedCharacterText('F'));
 
     }
-    @Test
-    public void decryptedCharacterText_returnsCharPlusThreePositions_K() {
-        decryptedCharacter decryptedCharacter = new decryptedCharacter();
-        Character expected = 'N';
-        assertEquals(expected, decryptedCharacter.decryptedCharacterText('K'));
-
-    }
-
-    @Test
-    public void decryptedCharacterText_returnsCharPlusThreePositions_BOY() {
-        decryptedCharacter decryptedCharacter = new decryptedCharacter();
-        String expected = "ERB";
-        assertEquals(expected, decryptedCharacter.decryptedText("BOY"));
-
-    }
+//    @Test
+//    public void decryptedCharacterText_returnsCharPlusThreePositions_K() {
+//        decryptedCharacter decryptedCharacter = new decryptedCharacter();
+//        Character expected = 'N';
+//        assertEquals(expected, decryptedCharacter.decryptedCharacterText('K'));
+//
+//    }
+//
+//    @Test
+//    public void decryptedCharacterText_returnsCharPlusThreePositions_QEB() {
+//        decryptedCharacter decryptedCharacter = new decryptedCharacter();
+//        String expected = "THE";
+//        assertEquals(expected, decryptedCharacter.decryptedText("QEB"));
+//
+//    }
 }

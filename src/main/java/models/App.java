@@ -4,12 +4,20 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Enter a String");
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
+        System.out.println("Please enter a string:");
+        String myText = scanner.nextLine();
 
-        CaesarEncoderDecorder caesarEncoderDecorder = new CaesarEncoderDecorder();
-        System.out.println("Your Ciphered word is:");
-        System.out.println(CaesarEncoderDecorder.getEncryptMessage());
+        System.out.println("Please enter the key:");
+        int myKey = scanner.nextInt();
+
+        if (myKey > 0 && myKey <= 25){
+            CaesarEncoderDecorder output = new CaesarEncoderDecorder(myText, myKey);
+            encryptedCharacter enctypted = new encryptedCharacter();
+            enctypted.encryptedCharacter(output.getText(), output.getKey());
+
+            System.out.println("Original text is:" + output.getText());
+            System.out.println("The new text is:" + enctypted.getMyEncrypted());
+        }
     }
 }
