@@ -5,17 +5,17 @@ import java.util.Arrays;
 public class CaesarEncoderDecorder {
     private static int key = 25;
     private static String encryptMessage;
-    private static String dencryptMessage;
+
 
     Character[] ALPHABET = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
     public Character cipherCharacter(char letter) {
         int position = Arrays.asList(ALPHABET).indexOf(letter);
 
-        if (position + 2 >= ALPHABET.length) {
-            position = Math.abs(ALPHABET.length - position - 2);
+        if (position - 3 >= ALPHABET.length) {
+            position = Math.abs(ALPHABET.length - position + 3);
         } else {
-            position = position + 2;
+            position = position - 3;
 
         }
         return ALPHABET[position];
