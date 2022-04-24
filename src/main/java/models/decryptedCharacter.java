@@ -19,5 +19,32 @@ public class decryptedCharacter {
         return ALPHABET[position];
     }
 
+    public String decryptedText (String text){
+        char[] decryptedTextArray = text.toUpperCase().toCharArray();
+        String decryptedText = "";
+
+
+        for (int i=0; i<decryptedTextArray.length; i++){
+            decryptedText+=decryptedCharacterText(decryptedTextArray[i]);
+        }
+        return decryptedText;
+
+    }
+
+    public static Integer getKey() {
+        return key;
+    }
+
+    public static void setKey(Integer key) {
+        decryptedCharacter.key = key;
+    }
+
+    public static String getDecryptedMessage() {
+        return decryptedMessage;
+    }
+
+    public static void setDecryptedMessage(String decryptedMessage) {
+        decryptedCharacter.decryptedMessage = decryptedMessage;
+    }
 }
 
