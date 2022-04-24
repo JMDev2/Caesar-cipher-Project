@@ -8,7 +8,7 @@ public class decryptedCharacter {
 
     Character[] ALPHABET = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-    public Character decryptedCharacter(char letter){
+    public Character decryptedCharacterText(char letter){
         int position = Arrays.asList(ALPHABET).indexOf(letter);
 
         if(position + 3 >= ALPHABET.length){

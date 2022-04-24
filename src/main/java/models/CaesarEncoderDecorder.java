@@ -39,9 +39,7 @@ public class CaesarEncoderDecorder {
         return encryptMessage;
     }
 
-    public static String getDencryptMessage() {
-        return dencryptMessage;
-    }
+
 }
 
 
