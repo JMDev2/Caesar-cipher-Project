@@ -12,7 +12,7 @@ Caesar Cipher is a Java command line App which shifts letters a ceratin number o
 
 The user is able to;
 
-* Run the application
+* Run the application 
 
 * Input the Characters to encode ie THE
 
