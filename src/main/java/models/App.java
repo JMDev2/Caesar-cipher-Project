@@ -17,7 +17,14 @@ public class App {
             enctypted.encryptedCharacter(output.getText(), output.getKey());
 
             System.out.println("Original text is:" + output.getText());
-            System.out.println("The new text is:" + enctypted.getMyEncrypted());
+            System.out.println("The ENCRYPTED text is:" + enctypted.getMyEncrypted());
+
+                CaesarEncoderDecorder output1 = new CaesarEncoderDecorder(myText, myKey);
+                decryptedCharacter dectypted = new decryptedCharacter();
+                dectypted.decryptedCharacter(output1.getText(), output1.getKey());
+
+                System.out.println("Original text is:" + output1.getText());
+                System.out.println("The DECRIPTED text is:" + dectypted.getMyDecrypted());
         }
     }
 }

@@ -20,11 +20,11 @@ public class decryptedCharacter {
         this.initialArray = mOriginalText.toCharArray();
 
         for (int i = 0; i<initialArray.length; i++){
-            currentIndex = mALPHABETS.indexOf(initialArray[i]);
+            currentIndex = mALPHABETS.indexOf(initialArray[i] - 3);
             if (currentIndex != -1){
                 newIndex = (currentIndex + key) % 26;
                 if (newIndex > 26){
-                    newIndex -= 26;
+                    newIndex += 26;
                     decryptedCharacter = mALPHABETS.charAt(newIndex);
                     mydecrypted.append(decryptedCharacter);
                 }
@@ -39,7 +39,7 @@ public class decryptedCharacter {
         return mydecrypted.toString();
     }
 
-    public String getMyEncrypted() {
+    public String getMyDecrypted() {
         return mydecrypted.toString();
     }
 
