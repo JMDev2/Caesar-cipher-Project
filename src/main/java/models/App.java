@@ -23,7 +23,7 @@ public class App {
                 decryptedCharacter dectypted = new decryptedCharacter();
                 dectypted.decryptedCharacter(output1.getText(), output1.getKey());
 
-                System.out.println("Original text is:" + output1.getText());
+
                 System.out.println("The DECRYPTED text is:" + dectypted.getMyDecrypted());
         }
     }
