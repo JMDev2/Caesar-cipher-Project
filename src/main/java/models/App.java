@@ -16,6 +16,10 @@ public class App {
             encryptedCharacter enctypted = new encryptedCharacter();
             enctypted.encryptedCharacter(output.getText(), output.getKey());
 
+
+            decryptedCharacter dectypted = new decryptedCharacter();
+            dectypted.decryptedCharacter(output.getText(), output.getKey());
+
             System.out.println("Original text is:" + output.getText());
             System.out.println("The new text is:" + enctypted.getMyEncrypted());
         }
