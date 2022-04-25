@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class CaesarEncoderDecorderTest {
+//public class CaesarEncoderDecorderTest {
 //    @Test
 //    public void cipherCharacter_returnsCharPlusThreePositions_F(){
 //        CaesarEncoderDecorder caesarEncoderDecorder = new CaesarEncoderDecorder();
@@ -17,12 +17,12 @@ public class CaesarEncoderDecorderTest {
 //        Character expected = 'A';
 //        assertEquals(expected, caesarEncoderDecorder.cipherCharacter('D'));
 //    }
-    @Test
-    public void cipherCharacter_returnsCharPlusThreePositions_THE(){
-        CaesarEncoderDecorder caesarEncoderDecorder = new CaesarEncoderDecorder();
-        String expected = "QEB";
-        assertEquals(expected, caesarEncoderDecorder.cipherText("THE"));
-    }
-
-
-}
+//    @Test
+//    public void cipherCharacter_returnsCharPlusThreePositions_THE(){
+//        CaesarEncoderDecorder caesarEncoderDecorder = new CaesarEncoderDecorder();
+//        String expected = "QEB";
+//        assertEquals(expected, caesarEncoderDecorder.cipherText("THE"));
+//    }
+//
+//
+//}
