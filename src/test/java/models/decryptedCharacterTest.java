@@ -8,7 +8,7 @@ public class decryptedCharacterTest {
     @Test
     public void decryptedCharacter_returnsCharMinusThreePositions_QEB() {
         decryptedCharacter decryptedCharacter = new decryptedCharacter();
-        String expected = "THE";
+        String expected = "QE";
         assertEquals(expected, decryptedCharacter.decryptedCharacter("QEB", 3));
 
     }
